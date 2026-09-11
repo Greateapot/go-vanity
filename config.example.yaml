@@ -1,0 +1,12 @@
+version: "1.0"
+rules:
+  - match: "go.example.org/project"
+
+    import:
+      vcs: git
+      repo: "https://git.example.org/example/project"
+
+    source:
+      web: "https://git.example.org/example/project/tree/{dir}"
+      file: "https://git.example.org/example/project/blob/{file}"
+      line: "#L{line}"

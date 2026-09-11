@@ -1,0 +1,8 @@
+services:
+  vanity:
+    build: .
+    ports:
+      - "80:3030"
+    volumes:
+      - ./config.example.yaml:/etc/vanity/vanity.yaml:ro
+    restart: unless-stopped

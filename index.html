@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="go-import" content="{{ .ImportPath }} {{ .Import }}">
+
+  {{- if .Source }}
+  <meta name="go-source" content="{{ .ImportPath }} {{ .Source }}">
+  {{- end }}
+</head>
+<body>
+  <h1>{{ .ImportPath }}</h1>
+</body>
+</html>
